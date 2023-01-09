@@ -60,6 +60,6 @@ def insert_into_snowflake(add_my_fruit):
       my_cur.execute("insert into fruit_load_list values ('from streamlit')")    
   return "Thanks for adding " + add_my_fruit
 
-if steamlit.button("Add fruit to list"):
+if streamlit.button('Add fruit to databse table'):
   back_from_function = insert_into_snowflake(add_my_fruit)
   streamlit.text(f"Thanks for adding {add_my_fruit}")
